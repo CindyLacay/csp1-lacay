@@ -28,7 +28,7 @@
 
  <!-- Navbar Start-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
-        <a href="#landing" class="navbar-brand d-lg-none"><i class="fa fa-home w3-xxlarge"></i></i></a>
+        <a href="#landing" class="navbar-brand d-lg-none"><i class="fa fa-home w3-xxlarge"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-nav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -95,27 +95,27 @@
                 <!-- End of About Me -->
                 <!-- Other Tools Start -->
                 <div class="row flex-column bg-white pt-4" id="tools">
-                                <h1 class="my-1 text-center border-bottom border-dark" >Tools I Use</h1>
+                                <h1 class="my-1 text-center" >Tools I Use</h1>
                                 <div class="row justify-content-center py-3">
                                     <div class="col-md-3 col-lg-2 mx-4 my-3">
-                                        <h3 class="text-center">Front End</h3>
+                                        <h3 class="text-center border-bottom border-dark">Front End</h3>
                                         <div class="row justify-content-center mb-3">
-                                            <div class="col-6">
+                                            <div class="col-md-6">
                                                 <img src="./images/bs.png" class="img-fluid">
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <img src="./images/css.png" class="img-fluid">
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-md-6">
                                                 <img src="./images/js.png" class="img-fluid">
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <img src="./images/html5.png" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-lg-2 mx-4 my-3 mb-3">
-                                        <h3 class="text-center">Other Tools</h3>
+                                        <h3 class="text-center border-bottom border-dark">Other Tools</h3>
                                         <div class="row">
                                             <div class="col-6">
                                                 <img src="./images/git.png" class="img-fluid">
@@ -130,10 +130,10 @@
                 <!-- Other Tools End -->
                 <!-- Contact Me Start -->
 
-                    <div class="text-center bg-white border-top border-dark pt-3 mb-5" id="contact">
+                    <div class="text-center bg-white pt-3 mb-5" id="contact">
                         <h2>Contact Me</h2>
                         <div class="row justify-content-center
-                        p-2">
+                        p-2 bg-white">
                                         <div class="col-3 col-md-1">
                                           <a href="https://www.facebook.com/dzkcindy" target="blank"> <i class="fab fa-facebook w3-xxlarge"></i></a>
                                         </div>
@@ -150,41 +150,64 @@
         <!-- Shop start -->
 
         <div class=" pt-5 text-center text-white bg-dark" id="shop">
-         <i class="fab fa-facebook w3-xxlarge"> <a href="https://www.facebook.com/themixingbowlbygab" target="blank">The Mixing Bowl By Gab </i></a>
+         <i class="fab fa-facebook w3-xxlarge"><a href="https://www.facebook.com/themixingbowlbygab" target="blank">The Mixing Bowl By Gab</i></a>
          <h5>Brgy.Libjo, Batangas City</h5>
-        </div>
-        <div class="row">
-                        <div class="col-md-6 my-4">
-                            <h4 class="text-center my-4">Visit Us</h4>
-                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=centro%20escolar%20university%20manila&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        </div>
-                        <div class="col-md-6 my-4">
-                            <h4 class="text-center my-4">Message Us</h4>
-                            <form>
-                                <div class="form-group">
-                                    <label>Full Name</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Message</label>
-                                    <textarea class="form-control"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-outline-dark btn-block">Send</button>
-                            </form>
-                        </div>
+
+         <div class="bg-dark text-light min-vh-100 p-5 text-center rows">
+               <h2 class="mb-3">Message us for inquiries</h2>
+             <div class="container-fluid bg-secondary text-light justify-content-center rounded col-xl-4 col-sm-12 col-md-8 ">
+               
+               <form>
+                 <div class="form-group p-1">
+                     <label for="Name">Name</label>
+                     <input type="name" class="form-control" id="Name" placeholder="Your Name">
+                   </div>
+                   <div class="form-group">
+                       <label for="Contact-Number">Contact Number</label>
+                       <input type="number" class="form-control" id="Contact-Number" placeholder="+63 9** *** ***">
+                     </div>
+               <div class="form-group">
+                   <label for="Message">Inquiries</label>
+                   <textarea class="form-control" id="Message" rows="5"></textarea>
+                 </div>
+              <button type="button" class="btn btn-dark mb-2 " data-toggle="modal" data-target="#exampleModal">
+                Send
+              </button>
+
+              <!-- Modal -->
+              <div class="text-dark">
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
+                    <div class="modal-body">
+                      Message successfully Sent
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+               </form>
+        </div>
+    </div>
+        <!--  -->
 
         <!-- Shop End -->
 
-         <footer class="p-1 bg-secondary text-light">
-                <h6 class="text-center">CINDY LACAY &copy; All Rights Reserved 2022</h6>
-        </footer>
+         
     <!-- Contentt Area end -->
       </div>
+      <footer class="p-1 bg-secondary text-light">
+                <h6 class="text-center">CINDY LACAY &copy; All Rights Reserved 2022</h6>
+        </footer>
     
     
 <!-- Boostrap Js -->
