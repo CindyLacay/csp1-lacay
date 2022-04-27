@@ -15,7 +15,7 @@
 	<!-- Google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:ital,wght@0,100;0,300;1,400;1,500&family=Open+Sans&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:ital,wght@0,100;0,300;1,XMR=Poppins:wght@200&display=swap" rel="stylesheet">
 
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/5796775e7d.js" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="portfolio-nav">
             <ul class="navbar-nav ml-auto text-center text-md-left">
                 <li class="nav-item">
-                    <a href="#aboutme" class="nav-link mr-2 text-light">About</a>
+                    <a href="#aboutcontent" class="nav-link mr-2 text-light">About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#shop" class="nav-link mr-2 text-light">Shop</a>
@@ -60,56 +60,60 @@
     </div>
     <!-- Banner end -->
     <!-- Content area start -->
-      <div class="content-area">
+      <div class="content-area text-center">
    
       		<div class="wrapper pt-4 text-center">
       		<h1 id="hello">Hello, World!</h1>
-            <div class=" p-4 container w-50">
-                <h4>I'm Cindy ––– Financial Advisor | Baker | a Frontend Developer.</h4>
-                <p class="border-bottom border-dark d-inline-block w-60 p-2 pb-1 pt-3">With every line of code, I strive to make the web a beautiful place.</p>
+            <div class=" p-4 container">
+                <h4 id="name">I'm <em>Cindy</em> ––– <strong>Financial Advisor | Baker | a Front-end Developer.</strong></h4>
+                <p class="p-2 pb-1 pt-3">With every line of code, I strive to make the web a beautiful place.</p>
+                <a href="#aboutcontent"><i class='fas fa-angle-double-down w3-xxlarge'></i></a>
+
             </div>
             
         </div>
-
-
-      <div class=" container-fluid pt-5 text-center" id="aboutme">
-      <h2>About Me</h2>
+        <!-- About Me Start -->
+    <div id="aboutcontent" class="p-1">
+      <div class="container-fluid text-center mt-3" id="aboutme">
+      <h2 id="aboutMe">About Me</h2>
       </div>
 
       <div class="container-fluid">
-                  <div class="row bg-white justify-content-center align-items-center pb-4">
+        
+                  <div class="bg-white row justify-content-center align-items-center">
                       <div class="col-10 col-md-3 p-3 py-lg-5">
-                          <img width="250px "src="./images/dp.jpg" class="rounded-circle border border-dark img-fluid">
+                          <img id="dp" width="300px "src="./images/dp.jpg" class="rounded-circle border border-dark img-fluid">
                       </div>
                       <div class="col-md-7 col-lg-5 text-dark pl-md-5">
-                          <h1 class="mt-2 text-center text-md-left">Cindy Joy Lacay</h1>
+                          <h1 id="fullname" class="mt-2 text-center text-md-left">Cindy Joy Lacay</h1>
                           <h3 class="my-3 text-center text-md-left">Let me tell you a few things..</h3>
-                          <p class="text-justify pb-4">
-                              I am Cindy Joy Lacay. With a passion for programming and a knack for learning and exploring various technology related subjects. I'm enthusiastic about acquiring new skills and my desire to learn is never ending. You batter believe baking is my happy place. In fact, included here is my <a href="#shop"> pastry shop</a>
+                          <p class="pb-4 text-justify text-sm-left">
+                               With a passion for programming and a knack for learning and exploring various technology related subjects. I'm enthusiastic about acquiring new skills and my desire to learn is never ending. You batter believe baking is my happy place. In fact, included here is my <a id="themix" href="#shop">pastry shop</a>
                           </p>
-            
 
                   </div>
               </div>
           </div>
+          </div>
                 <!-- End of About Me -->
                 <!-- Other Tools Start -->
+                <div>
                 <div class="row flex-column bg-white pt-4" id="tools">
-                                <h1 class="my-1 text-center" >Tools I Use</h1>
+                                <h1 id="tools-use" class="my-1 text-center" >Tools I Use</h1>
                                 <div class="row justify-content-center py-3">
-                                    <div class="col-md-3 col-lg-2 mx-4 my-3">
+                                    <div class="col-sm-2 col-lg-2 mx-4 my-3">
                                         <h3 class="text-center border-bottom border-dark">Front End</h3>
                                         <div class="row justify-content-center mb-3">
-                                            <div class="col-md-6">
+                                            <div class="col-sm-6">
                                                 <img src="./images/bs.png" class="img-fluid">
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
+                                            <div class="col-sm-6">
                                                 <img src="./images/css.png" class="img-fluid">
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-sm-6">
                                                 <img src="./images/js.png" class="img-fluid">
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
+                                            <div class="col-sm-6">
                                                 <img src="./images/html5.png" class="img-fluid">
                                             </div>
                                         </div>
@@ -127,11 +131,12 @@
                                     </div>
                                 </div>
                             </div>
+
                 <!-- Other Tools End -->
                 <!-- Contact Me Start -->
 
-                    <div class="text-center bg-white pt-3 mb-5" id="contact">
-                        <h2>Contact Me</h2>
+                    <div class="text-center bg-white pt-3 mb-5">
+                        <h2 id="contact">Contact Me</h2>
                         <div class="row justify-content-center
                         p-2 bg-white">
                                         <div class="col-3 col-md-1">
@@ -150,7 +155,7 @@
         <!-- Shop start -->
 
         <div class=" pt-5 text-center text-white bg-dark" id="shop">
-         <i class="fab fa-facebook w3-xxlarge"><a href="https://www.facebook.com/themixingbowlbygab" target="blank">The Mixing Bowl By Gab</i></a>
+         <i class="fab fa-facebook w3-xxlarge"><a href="https://www.facebook.com/themixingbowlbygab" target="blank">  The Mixing Bowl By Gab</i></a>
          <h5>Brgy.Libjo, Batangas City</h5>
 
          <div class="bg-dark text-light min-vh-100 p-5 text-center rows">
